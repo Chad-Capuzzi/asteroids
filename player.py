@@ -4,6 +4,8 @@ from circleshape import CircleShape
 
 
 class Player(CircleShape):
+    """A player controlled ship that can rotate and move forward/backward."""
+
     def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
